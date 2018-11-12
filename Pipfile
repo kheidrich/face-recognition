@@ -6,12 +6,10 @@ name = "pypi"
 [packages]
 flask = "*"
 numpy = "*"
-scipy = "*"
-matplotlib = "*"
-scikit-learn = "*"
-jupyter = "*"
+dlib = "*"
+opencv-python = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.7"
+python_version = "2.7"
