@@ -5,7 +5,7 @@ import numpy as np
 
 fileDir = os.path.dirname(os.path.realpath(__file__))
 
-def to_rgb_array(image_buffer):
+def decode_image_buffer(image_buffer):
     return cv2.imdecode(np.array(image_buffer), cv2.IMREAD_COLOR)
 
 def rgb_to_grayscale(image):
