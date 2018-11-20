@@ -32,5 +32,9 @@ def recognize(face_features, face_features_to_recognize):
     train_data.append(np.array(face_features, dtype='f'))
     labels.append(POSITIVE)
     knn.train(np.array(train_data), cv2.ml.ROW_SAMPLE, np.array(labels))
-    print knn.findNearest(np.array([np.array(face_features_to_recognize, dtype='f')]), 3)
-    return False
+    (ret, results, neighbours, dist) = knn.findNearest(np.array([np.array(face_features_to_recognize, dtype='f')]), 2)
+    most_nearest = neighbours[0][0]
+    if(most_nearest == 1):
+        return True
+    else:
+        return False
