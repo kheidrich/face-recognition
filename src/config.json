@@ -1,4 +1,5 @@
 {
     "faceLandmarksModelPath": "/home/kevin/openface/models/dlib/shape_predictor_68_face_landmarks.dat",
-    "featureExtractionModelPath": "/home/kevin/openface/models/openface/nn4.small2.v1.t7"
+    "featureExtractionModelPath": "/home/kevin/openface/models/openface/nn4.small2.v1.t7",
+    "distanceThreshold": 0.99
 }
